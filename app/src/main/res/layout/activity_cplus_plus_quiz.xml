@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".CPlusPlusQuiz">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="412dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cbg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/cPlusPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="30dp"
+                android:layout_y="0dp"
+                app:srcCompat="@drawable/question" />
+
+            <TextView
+                android:id="@+id/que"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_x="55dp"
+                android:layout_y="68dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="ABC"
+                android:textAlignment="center"
+                android:textColor="#5B1CAE"
+                android:textSize="20dp" />
+        </AbsoluteLayout>
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/oAbtn"
+                android:onClick="optionAClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="31dp"
+                android:layout_y="-5dp"
+                app:srcCompat="@drawable/option" />
+
+            <TextView
+                android:id="@+id/optiona"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_x="58dp"
+                android:layout_y="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="ABC"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="70dp" />
+        </AbsoluteLayout>
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/oBbtn"
+                android:onClick="optionBClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="31dp"
+                android:layout_y="-5dp"
+                app:srcCompat="@drawable/option" />
+
+            <TextView
+                android:id="@+id/optionb"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_x="58dp"
+                android:layout_y="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="ABC"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="70dp" />
+        </AbsoluteLayout>
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/oCbtn"
+                android:onClick="optionCClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="31dp"
+                android:layout_y="-5dp"
+                app:srcCompat="@drawable/option" />
+
+            <TextView
+                android:id="@+id/optionc"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_x="58dp"
+                android:layout_y="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="ABC"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="70dp" />
+        </AbsoluteLayout>
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/oDbtn"
+                android:onClick="optionDClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="31dp"
+                android:layout_y="-5dp"
+                app:srcCompat="@drawable/option" />
+
+            <TextView
+                android:id="@+id/optiond"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_x="58dp"
+                android:layout_y="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="ABC"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="70dp" />
+        </AbsoluteLayout>
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option4"
+            app:layout_constraintVertical_bias="0.773"
+            android:background="@drawable/next" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
